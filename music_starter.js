@@ -1,30 +1,41 @@
 
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
-  background(20)
+  background(225)
   textFont('Verdana'); // please use CSS safe fonts
   rectMode(CENTER)
   textSize(24);
   
+  strokeWeight(2)
+  line(0,40,height,40);
+  line(0,80,height,80);
+  line(0,120,height,120);
+  line(0,160,height,160);
+  line(0,200,height,200);
+  line(0,240,height,240); 
+  line(0,280,height,280);
+  line(0,320,height,320);
+  line(0,360,height,360);
+  line(0,400,height,400);
+  line(0,440,height,440);
+  line(0,480,height,480);
+  line(0,520,height,520)
+  line(0,560,height,560)
 
-  eye = map(drum,0,100,2,20)
-  scale(2)  
-  bezier(35,54,20,20,80,20,65,54) //head
-  fill(255)
-  circle(41,38,eye,eye)
-  circle(59,38,eye,eye)
-  bezier(50,150,-10,85,25,50,50,50) //left body left
-  bezier(50,150,110,85,75,50,50,50) //left body right
-  fill(79, 121, 66)
-  bezier(71,122,87,128,77,152,60,138) //flipper right
-  bezier(29,122,13,128,23,152,40,138) //flipper left
-
-  bezier(50,300-10-150,-10+10,235-10-150,25+10,200+7-150,50,200+7-150) //left body left
-  bezier(50,300-10-150,110-10,235-10-150,75-10,200+7-150,50,200+7-150) //left body right
-
-  bezier(28,59,5,52,-5,70,18,78)
-  bezier(71,59,94,52,104,70,82,78)
-  
+  line(40,0,40,width)
+  line(80,0,80,width)
+  line(120,0,120,width)
+  line(160,0,160,width)
+  line(200,0,200,width)
+  line(240,0,240,width)
+  line(280,0,280,width)
+  line(320,0,320,width)
+  line(360,0,360,width)
+  line(400,0,400,width)
+  line(440,0,440,width)
+  line(480,0,480,width)
+  line(520,0,520,width)
+  line(560,0,560,width)
    
 
 }
