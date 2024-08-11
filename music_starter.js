@@ -9,6 +9,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
 //grid
   strokeWeight(2)
+  stroke(115)
   line(0,30,height,30)
   line(0,60,height,60)
   line(0,90,height,90)
@@ -57,13 +58,15 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   circle(54,103,60,60)
   quad()
 //lights
-  //
+  // light beams
   stroke(0)
   fill(66, 227, 245)
   quad(30,30,width,450,width,height,220,height)
   fill(245, 66, 221)
   quad(570,30,360,height,0,height,0,500)
 
+  // light boxes
+  line(10,30,32,13)
 }
 
 
