@@ -55,7 +55,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   // triangle(140,540,300,510,208,420)
   circle(66,352,50,50)
   circle(54,103,60,60)
-
+  quad()
 //lights
   //
   stroke(0)
