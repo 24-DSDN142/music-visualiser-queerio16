@@ -79,5 +79,12 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
 
 
+// for(let i = 0; i < 50; i+=5){
+    
+//   quad(54,20+i,82,47-i,60,65+i,30,30-i);
+//   scale(1.2)
+// }
+
+
 }
   
