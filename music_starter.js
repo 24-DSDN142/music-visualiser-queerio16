@@ -71,12 +71,13 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   line(548,0,548,45)
   line(65,0,65,45)
   strokeWeight(2)
+  quad(54,20,82,47,60,65,30,30)
+  quad(555,17,570,30,540,55,530,42)
   quad(7+3,30,40+3,14,87+3,61,35+3,88)
   quad(590,30,563,14,518,59,565,85)
-  
-
   fill(255,0,0)
+
+
+
 }
-
-
   
