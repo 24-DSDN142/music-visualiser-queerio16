@@ -66,7 +66,16 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   quad(570,30,360,height,0,height,0,500)
 
   // light boxes
-  line(10,30,32,13)
+  fill(100)
+  strokeWeight(5)
+  line(548,0,548,45)
+  line(65,0,65,45)
+  strokeWeight(2)
+  quad(7+3,30,40+3,14,87+3,61,35+3,88)
+  quad(590,30,563,14,518,59,565,85)
+  
+
+  fill(255,0,0)
 }
 
 
