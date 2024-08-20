@@ -59,13 +59,14 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   quad()
 //lights
   // light beams
-  stroke(0)
+  
   fill(66, 227, 245)
   quad(30,30,width,450,width,height,220,height)
   fill(245, 66, 221)
   quad(570,30,360,height,0,height,0,500)
 
   // light boxes
+  stroke(2)
   fill(100)
   strokeWeight(5)
   line(548,0,548,45)
@@ -84,7 +85,14 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 //   quad(54,20+i,82,47-i,60,65+i,30,30-i);
 //   scale(1.2)
 // }
-
-
+  noStroke()
+  fill(250, 209, 65)
+  scale(1)
+  triangle(192-50,128-50,249+17,92-62,247,157)
+  fill(192, 77, 249)
+  rect(538,320,97,52)
+  quad(373,73,342,89,401,102)
+  scale(1)
+  fill(255,0,0)
 }
   
