@@ -50,22 +50,54 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   line(540,0,540,width)
   line(570,0,570,width)
 
-//shapes
+
+
+
+// for(let i = 0; i < 50; i+=5){
+    
+//   quad(54,20+i,82,47-i,60,65+i,30,30-i);
+//   scale(1.2)
+// }
+
+// shapes amd coloursss
   noStroke()
-  // triangle(40,50,90,70,70,20)
-  // triangle(140,540,300,510,208,420)
-  circle(66,352,50,50)
-  circle(54,103,60,60)
-  quad()
+  fill(250, 209, 65)
+  //triangle
+  push()
+  scale(0.8)
+  translate(90,50)
+  triangle(192-50,128-50,249+17,92-62,247,157)
+  pop()
+  scale(1)
+
+  //black colour drop shadows
+  fill(0)
+  quad(373+4,73-42,341+4,92-42,357+4,152-42,401+4,102-42)
+  rect(538+6,320+6,97,52)
+
+  //colour top layers
+  fill(192, 77, 249)  //purple
+  rect(538,320,97,52)
+  quad(373,73-50,341,92-50,357,152-50,401,102-50)
+  circle(66,352,93)
+  arc()
+  //circle(54,103,60,60)
+  scale(1)
+  fill(255,0,0)
+  stroke(0)
+  
+  
 //lights
   // light beams
   
+  noStroke()
   fill(66, 227, 245)
   quad(30,30,width,450,width,height,220,height)
   fill(245, 66, 221)
   quad(570,30,360,height,0,height,0,500)
 
   // light boxes
+
   stroke(2)
   fill(100)
   strokeWeight(5)
@@ -80,19 +112,5 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
 
 
-// for(let i = 0; i < 50; i+=5){
-    
-//   quad(54,20+i,82,47-i,60,65+i,30,30-i);
-//   scale(1.2)
-// }
-  noStroke()
-  fill(250, 209, 65)
-  scale(1)
-  triangle(192-50,128-50,249+17,92-62,247,157)
-  fill(192, 77, 249)
-  rect(538,320,97,52)
-  quad(373,73,342,89,401,102)
-  scale(1)
-  fill(255,0,0)
 }
   
