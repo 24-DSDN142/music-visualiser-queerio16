@@ -5,7 +5,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   textFont('Verdana'); // please use CSS safe fonts
   rectMode(CENTER)
   textSize(24);
-  
+  angleMode(DEGREES)
 
 //grid
   strokeWeight(2)
@@ -61,7 +61,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
 // shapes amd coloursss
   noStroke()
-  fill(250, 209, 65)
+  fill(250, 209, 65)   //yellow
   //triangle
   push()
   scale(0.8)
@@ -76,17 +76,23 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   rect(538+6,320+6,97,52)
 
   //colour top layers
-  fill(192, 77, 249)  //purple
+  fill(250, 163, 0)   //orange
   rect(538,320,97,52)
+  fill(192, 77, 249)  //purple
   quad(373,73-50,341,92-50,357,152-50,401,102-50)
   circle(66,352,93)
-  arc()
+  fill(12, 178, 192)  //dark teal blue 
+  // arc(7,232,67,67,0+49,180+49)
+  
+  arc(532,147,82,82,0-27,180-27)
   //circle(54,103,60,60)
   scale(1)
   fill(255,0,0)
   stroke(0)
-  
-  
+ 
+
+
+
 //lights
   // light beams
   
@@ -111,6 +117,28 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   fill(255,0,0)
 
 
+
+  //
+push()
+translate(0, 200);
+	var y = 30;
+	
+	beginShape();
+	for (var i =0; i<10; i++) {
+
+		vertex(i*50, y);
+		if(y == -50) {
+			y = 50;
+		} else {
+			y = -50;
+		}
+	}
+	
+	endShape();
+  pop()
+
+
+  
 
 }
   
