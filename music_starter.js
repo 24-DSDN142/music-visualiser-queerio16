@@ -59,68 +59,15 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 //   scale(1.2)
 // }
 
-// shapes amd coloursss
-  noStroke()
-  fill(250, 209, 65)   //yellow
-  //triangle
-  push()
-  scale(0.8)
-  translate(90,50)
-  triangle(192-50,128-50,249+17,92-62,247,157)
-  pop()
-  scale(1)
-
-  //black colour drop shadows
-  fill(0)
-  quad(373+4,73-42,341+4,92-42,357+4,152-42,401+4,102-42)
-  rect(538+6,320+6,97,52)
-
-  //colour top layers
-  fill(250, 163, 0)   //orange
-  rect(538,320,97,52)
-  fill(192, 77, 249)  //purple
-  quad(373,73-50,341,92-50,357,152-50,401,102-50)
-  circle(66,352,93)
-  fill(12, 178, 192)  //dark teal blue 
-  // arc(7,232,67,67,0+49,180+49)
-  
-  arc(532,147,82,82,0-27,180-27)
-  //circle(54,103,60,60)
-  scale(1)
-  fill(255,0,0)
-  stroke(0)
- 
-
-
-
-//lights
-  // light beams
-  
-  noStroke()
-  fill(66, 227, 245)
-  quad(30,30,width,450,width,height,220,height)
-  fill(245, 66, 221)
-  quad(570,30,360,height,0,height,0,500)
-
-  // light boxes
-
-  stroke(2)
-  fill(100)
-  strokeWeight(5)
-  line(548,0,548,45)
-  line(65,0,65,45)
-  strokeWeight(2)
-  quad(54,20,82,47,60,65,30,30)
-  quad(555,17,570,30,540,55,530,42)
-  quad(7+3,30,40+3,14,87+3,61,35+3,88)
-  quad(590,30,563,14,518,59,565,85)
-  fill(255,0,0)
-
-
-
-  //
+//  
+// code taken from mhf273 on p5.js editor with some modifications      https://editor.p5js.org/mhf273/sketches/rJp90Psob
 push()
-translate(0, 200);
+stroke(0)
+translate(533, 183);
+rotate(60)
+scale (0.18)
+noFill()
+strokeWeight(17)
 	var y = 30;
 	
 	beginShape();
@@ -136,6 +83,150 @@ translate(0, 200);
 	
 	endShape();
   pop()
+
+
+
+// shapes amd coloursss
+  noStroke()
+  fill(250, 209, 65)   //yellow
+  push()
+  scale(0.68)
+  translate(154,54)
+  triangle(192-50,128-50,249+17,92-62,247,157)
+  pop()
+
+
+
+  //black colour drop shadows
+  fill(0)
+  quad(373+4,73-42,341+4,92-42,357+4,152-42,401+4,102-42)
+
+  push()
+  scale(0.9)
+  translate(230,-117)
+  rotate(112)
+  quad(373+4,73-42,341+4,92-42,357+4,152-42,401+4,102-42)
+  pop()
+
+  push()
+  scale(0.8)
+  translate(82,20)
+  rect(538+6,320+6,97,52)
+  pop()
+
+  circle(562,377,43)
+
+
+  //colour top layers
+  push()
+  scale(0.8)
+  translate(82,20)
+  fill(250, 163, 0)   //orange
+  rect(538,320,97,52)
+  pop()
+
+  push()
+  fill(250, 163, 0) 
+  scale(0.9)
+  translate(224,-124)
+  rotate(112)
+  quad(373+4,73-42,341+4,92-42,357+4,152-42,401+4,102-42)
+  pop()
+
+  fill(192, 77, 249)  //purple
+  quad(373,73-50,341,92-50,357,152-50,401,102-50)
+  circle(558,373,43)
+
+  circle(56,352,93)
+  fill(12, 178, 192)  //dark teal blue 
+  // arc(7,232,67,67,0+49,180+49)
+  
+  push()
+  scale(0.9)
+  translate(120,10)
+  arc(532,147,82,82,0-27,180-27)
+  pop()
+  //circle(54,103,60,60)
+  scale(1)
+  fill(255,0,0)
+  stroke(0)
+
+  
+ 
+// code taken from mhf273 on p5.js editor with some modifications      https://editor.p5js.org/mhf273/sketches/rJp90Psob
+push()
+translate(213, 32);
+rotate(146)
+scale (0.2)
+noFill()
+strokeWeight(13)
+  var y = 30;
+	
+  beginShape();	
+  for (var i =0; i<10; i++) {
+
+		vertex(i*50, y);
+		if(y == -50) {
+			y = 50;
+		} else {
+			y = -50;
+		}
+	}
+	
+	endShape();
+  pop()
+
+
+  // code taken from mhf273 on p5.js editor with some modifications      https://editor.p5js.org/mhf273/sketches/rJp90Psob
+push()
+translate(53, 253);
+rotate(20)
+scale (0.25)
+noFill()
+strokeWeight(13)
+	var y = 30;
+	
+	beginShape();
+	for (var i =0; i<10; i++) {
+
+		vertex(i*50, y);
+		if(y == -50) {
+			y = 50;
+		} else {
+			y = -50;
+		}
+	}
+	
+	endShape();
+  pop()
+
+//lights
+  // /light beams
+  
+  noStroke()
+  fill(66, 227, 245)
+  quad(30,30,width,450,width,height,220,height)
+  fill(245, 66, 221)
+  quad(570,30,360,height,0,height,0,500)
+
+  // light boxes
+  stroke(2)
+  fill(100)
+  strokeWeight(5)
+  line(548,0,548,45)
+  line(65,0,65,45)
+  strokeWeight(2)
+  quad(54,20,82,47,60,65,30,30)
+  quad(555,17,570,30,540,55,530,42)
+  quad(7+3,30,40+3,14,87+3,61,35+3,88)
+  quad(590,30,563,14,518,59,565,85)
+  fill(255,0,0)
+
+
+
+
+
+  
 
 
   
