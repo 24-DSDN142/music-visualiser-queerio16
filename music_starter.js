@@ -243,7 +243,7 @@ strokeWeight(13)
   // line(171,380,157,348)
   // line(157,348,128,373)
 
-
+//W
   beginShape()
   vertex(128,373)
   vertex(110,296)
@@ -257,6 +257,12 @@ strokeWeight(13)
   vertex(157,348)
   endShape()
 
+  
+  line(224,280,254,279)
+  line(254,279,250,313)
+  line(250,313,264,312)
+  line(264,312,265,295)
+  line(265,295,294,294)
 
 }
   
