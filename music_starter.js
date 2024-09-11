@@ -1,5 +1,11 @@
 
 // vocal, drum, bass, and other are volumes ranging from 0 to 100
+
+// let img;
+// let url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKTn4EWFHuaWkF1D5uSSU7yrrfdakwOgkLpA&s'
+
+
+
 function draw_one_frame(words, vocal, drum, bass, other, counter) {
   background(225)
   textFont('Verdana'); // please use CSS safe fonts
@@ -224,11 +230,14 @@ strokeWeight(13)
 
 
 
-
-
-  
-
-
+// WHAM!! BAM!!
+  //line(227,200,220,219)
+  line(110,296,128,373)
+  line(110,296,146,288)
+  line(146,288,150,307)
+  line(150,307,167,288)
+  line(167,288,173,318)
+  line(173,318,)
   
 
 }
