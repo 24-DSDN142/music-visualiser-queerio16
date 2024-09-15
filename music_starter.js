@@ -14,7 +14,6 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
   textSize(24);
   angleMode(DEGREES)
   
-
 //grid
   strokeWeight(2)
   stroke(115)
@@ -60,6 +59,7 @@ function draw_one_frame(words, vocal, drum, bass, other, counter) {
 
 
 // SHAPES AND COLOURS
+ // code taken from mhf273 on p5.js editor with some modifications      https://editor.p5js.org/mhf273/sketches/rJp90Psob
 push()
 stroke(0)
 translate(533, 183);
@@ -83,9 +83,7 @@ strokeWeight(17)
 	endShape();
   pop()
 
-
-
-// shapes amd coloursss
+// shapes avd coloursss
   noStroke()
   fill(250, 163, 0)
   push()
@@ -94,7 +92,6 @@ strokeWeight(17)
   triangle(192-50,128-50,249+17,92-62,247,157)
   pop()
 
-  //black colour drop shadows
   fill(0)
   quad(373+4,73-42,341+4,92-42,357+4,152-42,401+4,102-42)
 
@@ -113,8 +110,6 @@ strokeWeight(17)
 
   circle(562,377,43)
 
-
-  //colour top layers
   push()
   scale(0.8)
   translate(82,20)
@@ -198,7 +193,6 @@ pop()
   arc(532,147,82,82,0-27,180-27)
   pop()
 
-
   scale(1)
   fill(255,0,0)
   stroke(0)
@@ -236,7 +230,7 @@ strokeWeight(13)
 	endShape();
   pop()
 
-
+ // code taken from mhf273 on p5.js editor with some modifications      https://editor.p5js.org/mhf273/sketches/rJp90Psob
   push()
 translate(537, 502);
 rotate(-10)
@@ -294,7 +288,7 @@ if (other > 50) {
 noStroke();
  quad(30, 30, width, 450, width, height, 220, height);
 
-if (other < 55) {
+if (bass < 55) {
   fill(245, 66, 221);
 } else {
   noFill();
@@ -305,9 +299,6 @@ if (other < 55) {
   // light boxes
 
   // map an on off sequence 
-
-
-
   stroke(2)
   fill(100)
   strokeWeight(5)
